@@ -130,6 +130,50 @@ INSERT INTO `usertype_pages` (`ID`, `UserTypeID`, `PageID`) VALUES
 (16, 4, 9),
 (17, 4, 8);
 
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE `feedback` (
+  `ID` int(20) NOT NULL,
+  `patient id` int(100) NOT NULL,
+  `comment` varchar(200) NOT NULL,
+  `rating` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `message`
+--
+
+CREATE TABLE `message` (
+  `ID` int(100) NOT NULL,
+  `sent_by` int(100) NOT NULL,
+  `received_by` int(100) NOT NULL,
+  `message` text NOT NULL,
+  `createdAt` date NOT NULL,
+  `seen` int(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `reply`
+--
+
+CREATE TABLE `reply` (
+  `ID` int(100) NOT NULL,
+  `review_id` int(100) NOT NULL,
+  `admin_id` int(100) NOT NULL,
+  `respond` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
 --
 -- Indexes for dumped tables
 --

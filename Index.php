@@ -187,14 +187,14 @@ class Index extends View
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="contents/img/doctors/doctor_2.jpg" alt="">
+              <img src="contents/img/doctors/Dr.Heba.jpeg" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
               </div>
             </div>
             <div class="body">
-              <p class="text-xl mb-0">Dr. Alexa Melvin</p>
+              <p class="text-xl mb-0">Dr. Heba Magdy</p>
               <span class="text-sm text-grey">Dental</span>
             </div>
           </div>

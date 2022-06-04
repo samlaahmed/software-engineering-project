@@ -71,7 +71,9 @@
             <a class="nav-link" href="<?php echo URLROOT . 'pages/Index'; ?>">Home</a>
 
             </li>
-
+           <li class="nav-item">
+            <a class="nav-link" href="<?php echo URLROOT . 'pages/Treatments'; ?>"> Treatments</a>
+            </li>
             <li class="nav-item ">
             <a class="nav-link" href="<?php echo URLROOT . 'pages/search'; ?>">Search</a>
 

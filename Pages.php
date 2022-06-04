@@ -105,7 +105,14 @@ class Pages extends Controller
         $TreatmentsView = new Treatments($this->getModel(), $this);
         $TreatmentsView->output();
     }
-    
+    public function delete_user(){
+
+        $viewPath = VIEWS_PATH . 'pages/delete_user.php';
+        require_once $viewPath;
+        $delete_userView = new delete_user($this->getModel(), $this);
+        $delete_userView->output();
+
+    }
 
 
 

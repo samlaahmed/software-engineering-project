@@ -98,6 +98,13 @@ class Pages extends Controller
 
     }
     
+    public function Treatments(){
+
+        $viewPath = VIEWS_PATH . 'pages/Treatments.php';
+        require_once $viewPath;
+        $TreatmentsView = new Treatments($this->getModel(), $this);
+        $TreatmentsView->output();
+    }
     
 
 
